@@ -2,6 +2,7 @@ package oop2coursework1;
 import java.util.Scanner;
 public class Oop2coursework1 {
   public static void main(String[] args) {
+    //a student can not be given 0 or more than 100 as result
         Scanner arm = new Scanner(System.in);
         System.out.println("Enter Student's name: ");
         String nam = arm.next();
@@ -84,7 +85,7 @@ public class Oop2coursework1 {
             System.out.println();
             }
         }
-        if(gpa >= 2.0){
+        if(gpa <= 2.0){
             System.out.print("Grade is: C");
             System.out.println();
         }
